@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*兼容模式下0-100之间取值*/
+        /*img{
+            filter:alpha(opacity=10);
+        }*/
+        /*
+        透明度的设置0.0-1.0之间
+         */
+        img{
+            opacity:0.5;
+        }
+        /*鼠标点到高亮显示*/
+        img:hover{
+            opacity: 1.0;
+        }
+        div{
+            background-image: url(taobaoWeb/images/pinpai1.gif);
+            background-repeat: no-repeat;
+            width: 242px;
+            height: 245px;
+            opacity: 0.5;
+        }
+        #id1:hover{
+            opacity: 1.0;
+        }
+    </style>
+</head>
+<body >
+<div>
+    <!--<img src="taobaoWeb/images/pinpai1.gif">-->
+    <div id="id1"><h3>测试文字</h3></div><!--实现了点击图片，文字高亮显示的效果-->
+</div>
+
+</body>
+</html>

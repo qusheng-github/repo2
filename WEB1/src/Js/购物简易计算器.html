@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #type1{
+            width: 400px;
+            height: 120px;margin: auto;
+            margin-top: 10px;
+            background-color:#C9E495
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 500px;height: 200px">
+        <div align="center">
+            <img src="images/logo.gif">
+        </div>
+        <div id="type1" align="center">
+            <form>
+                第一个数：<input type="text" id="no1" width="150px"><br>
+                第二个数：<input type="text" id="no2"><br>
+                <input type="button" value="+" onclick="jiafa()" style="width: 40px">&nbsp;&nbsp;<input type="button" value="-" onclick="jianfa()" style="width: 40px">&nbsp;&nbsp;
+                <input type="button" value="x" onclick="chengfa()" style="width: 40px">&nbsp;&nbsp;<input type="button" value="÷" onclick="chufa()" style="width: 40px">&nbsp;&nbsp;
+                <input type="button" value="归零" onclick="guilin()" style="width: 40px">&nbsp;&nbsp;<br>
+                计算结果<input type="text"id="result">
+            </form>
+
+        </div>
+    </div>
+
+</body>
+<!--<script>
+    var No1=document.getElementById("no1");
+    var No2=document.getElementById("no2");
+    var No3=document.getElementById("result");
+    function jiafa() {
+        No3.value=parseInt(No1.value)+parseInt(No2.value);
+    }
+    function jianfa() {
+        No3.value=parseInt(No1.value)-parseInt(No2.value);
+    }
+    function chengfa() {
+        No3.value=parseInt(No1.value)*parseInt(No2.value);
+    }
+    function chufa() {
+        No3.value=parseInt(No1.value)/parseInt(No2.value);
+    }
+    function guilin() {
+        var No3=document.getElementById("result");
+        No3.value=0;
+    }
+</script>-->
+<script>
+    var No1=document.getElementById("no1").value;
+    var No2=document.getElementById("no2").value;
+    var No3=document.getElementById("result").value;
+    function jiafa() {
+        No3=parseInt(No1)+parseInt(No2);
+    }
+    function jianfa() {
+        No3=parseInt(No1)-parseInt(No2);
+    }
+    function chengfa() {
+        No3=parseInt(No1)*parseInt(No2);
+    }
+    function chufa() {
+        No3=parseInt(No1)/parseInt(No2);
+    }
+    function guilin() {
+        No3=0;
+    }
+</script>
+
+</html>

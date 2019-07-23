@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function jiafa() {
+            var No1=document.getElementById("no1");
+            var No2=document.getElementById("no2");
+            var No3=document.getElementById("result");
+            No3.value=parseInt(No1.value)+parseInt(No2.value);
+
+        }
+        function jianfa() {
+            var No1=document.getElementById("no1");
+            var No2=document.getElementById("no2");
+            var No3=document.getElementById("result");
+            No3.value=parseInt(No1.value)-parseInt(No2.value);
+        }
+        function chengfa() {
+            var No1=document.getElementById("no1");
+            var No2=document.getElementById("no2");
+            var No3=document.getElementById("result");
+            No3.value=parseInt(No1.value)*parseInt(No2.value);
+        }
+        function chufa() {
+            var No1=document.getElementById("no1");
+            var No2=document.getElementById("no2");
+            var No3=document.getElementById("result");
+            No3.value=parseInt(No1.value)/parseInt(No2.value);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        第一个数：<input type="text" id="no1" ><br>
+        第二个数：<input type="text" id="no2"><br>
+        <input type="button" value="+" onclick="jiafa()">&nbsp;<input type="button" value="-" onclick="jianfa()">&nbsp;
+        <input type="button" value="x" onclick="chengfa()">&nbsp;<input type="button" value="/" onclick="chufa()">&nbsp;<br>
+        计算结果<input type="text"id="result">
+    </form>
+
+</body>
+</html>

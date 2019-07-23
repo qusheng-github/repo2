@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var s="我们的明天会更加美好";
+        var i=0;
+        function init() {
+            //document.write(s)
+            setInterval(show,200);
+        }
+
+        function show() {
+            i++;
+             var s_=s.substring(0,i);
+            var bodyObj=document.getElementById("mybody")
+            bodyObj.innerHTML=s_;
+            if(i==s.length){
+                i=0;
+            }
+        }
+    </script>
+</head>
+<body onload="init()" id="mybody">
+</body>
+</html>

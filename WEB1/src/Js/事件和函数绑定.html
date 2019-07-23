@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function btnCli() {
+            alert("试试就试试")
+        }
+        function init() {
+            //alert("页面加载成功")
+            /*或者在页面加载成功之后在运行方式2的js代码*/
+            document.getElementById("btn2").onclick=init;
+        }
+
+    </script>
+</head>
+<body onload="init()">
+   <input type="button" value="点击我试试" onclick="btnCli()">
+   <input type="button" value="点击我试试2" id="btn2">
+</body>
+    <script>
+        /*将方式2的JS放在html的最下面*/
+        document.getElementById("btn2").onclick=init;
+    </script>
+</html>

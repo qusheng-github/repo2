@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function runnian() {
+            var no=document.getElementById("year").value;
+            if(no%4==0&&no%100!=0||no%400==0){
+                if(no==""){
+                    alert("您还没输入年份")
+                }else{
+                    alert("您输入的是润年");
+                }
+            }else{
+                alert("你输入的不是闰年");
+            }
+        }
+    </script>
+</head>
+<body>
+<form>
+    <input type="text" style="width: 50px" id="year"><input type="button" value="判断是否为闰年" onclick="runnian()">
+</form>
+</body>
+</html>
